@@ -48,8 +48,8 @@
 1. [v2ray(F+C+G+A)+nginx](https://github.com/lxhao61/integrated-examples/tree/main/v2ray(F%2BC%2BG%2BA)%2Bnginx) （以trojan+tcp+tls/xtls为主的综合应用。）
 2. [v2ray(F+C+D+G+A)+caddy(N)](https://github.com/lxhao61/integrated-examples/tree/main/v2ray(F%2BC%2BD%2BG%2BA)%2Bcaddy(N)) （以trojan+tcp+tls/xtls为主加NaïveProxy的综合应用。）
 #### &emsp;以套娃方式实现VLESS回落/分流与Trojan回落共存为主的综合应用
-1. [v2ray(E+C+F+A)+nginx](https://github.com/lxhao61/integrated-examples/tree/main/v2ray(E%2BC%2BF%2BA)%2Bnginx) （由套娃方式实现的综合应用。）
-2. [v2ray(E+C+F+A)+caddy](https://github.com/lxhao61/integrated-examples/tree/main/v2ray(E%2BC%2BF%2BA)%2Bcaddy) （由套娃方式实现的综合应用。）
+1. [v2ray(E+B+C+F+G+A)+nginx](https://github.com/lxhao61/integrated-examples/tree/main/v2ray(E%2BB%2BC%2BF%2BG%2BA)%2Bnginx) （由套娃方式实现的综合应用。）
+2. [v2ray(E+B+C+F+D+G+A)+caddy(N)](https://github.com/lxhao61/integrated-examples/tree/main/v2ray(E%2BB%2BC%2BF%2BD%2BG%2BA)%2Bcaddy(N)) （由套娃方式实现的综合应用。
 #### &emsp;以Nginx/Caddy兼顾SNI分流实现VLESS回落/分流与Trojan回落/分流共存为主的综合应用
 1. [v2ray(E+B+F+C+G+A)+nginx](https://github.com/lxhao61/integrated-examples/tree/main/v2ray(E%2BB%2BF%2BC%2BG%2BA)%2Bnginx) （由Nginx兼顾SNI分流实现的综合应用。）
 2. [v2ray(E+B+F+C+D+G+A)+caddy(N)](https://github.com/lxhao61/integrated-examples/tree/main/v2ray(E%2BB%2BF%2BC%2BD%2BG%2BA)%2Bcaddy(N)) （由Caddy兼顾SNI分流实现的综合应用。）
