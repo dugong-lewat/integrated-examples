@@ -19,6 +19,11 @@
         "decryption": "none",
         "fallbacks": [
           {
+            "path": "/HALdGZ9k", //通过路径分流
+            "dest": 2001, //分流后转给vmess+ws监听端口
+            "xver": 1 //开启PROXY protocol发送，发送真实来源IP和端口给如下vmess+ws应用。1或2表示PROXY protocol版本。
+          },
+          {
             "alpn": "h2", //h2回落匹配
             "dest": 82, //h2回落端口
             "xver": 1 //开启PROXY protocol发送，发送真实来源IP和端口给Nginx。1或2表示PROXY protocol版本。
@@ -26,11 +31,6 @@
           {
             "dest": 81, //http/1.1回落端口
             "xver": 1 //开启PROXY protocol发送，发送真实来源IP和端口给Nginx。1或2表示PROXY protocol版本。
-          },
-          {
-            "path": "/HALdGZ9k", //通过路径分流
-            "dest": 2001, //分流后转给vmess+ws监听端口
-            "xver": 1 //开启PROXY protocol发送，发送真实来源IP和端口给如下vmess+ws应用。1或2表示PROXY protocol版本。
           }
         ]
       },
