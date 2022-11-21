@@ -22,9 +22,9 @@ V2Ray 或 Xray 前置（监听 443 端口），利用 vless+tcp+tls 或 vless+tc
 
 1、采用套娃方式实现共用 443 端口，仅需要一个域名及普通证书即可搞定，但套娃不支持 XTLS 应用。
 
-2、Xray 版本不小于 v1.4.0 或 V2Ray 版本不小于 v4.36.2 才支持 gRPC 传输方式。
+2、Xray 或 V2Ray 的监听地址不支持 Shadowsocks（SS） 协议使用 UDS 监听。
 
-3、Xray 或 V2Ray 的监听地址不支持 Shadowsocks（SS） 协议使用 UDS 监听。
+3、Xray 版本不小于 v1.4.0 或 V2Ray 版本不小于 v4.36.2 才支持 gRPC 传输方式。
 
 4、Caddy 支持 HTTP/1.1 server 与 H2C server 共用一个端口或一个进程。
 
