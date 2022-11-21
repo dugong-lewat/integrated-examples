@@ -26,7 +26,7 @@
           },
           {
             "dest": 88, //h2与http/1.1回落端口（共用端口）
-            "xver": 2 //开启PROXY protocol发送，发送真实来源IP和端口给Caddy。1或2表示PROXY protocol版本。多级传递，建议配置2。
+            "xver": 2 //开启PROXY protocol发送，发送真实来源IP和端口给Caddy。1或2表示PROXY protocol版本。与上一致，建议配置2。
           }
         ]
       },
