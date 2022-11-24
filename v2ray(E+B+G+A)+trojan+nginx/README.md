@@ -2,15 +2,15 @@
 
 利用 Nginx 支持 SNI 分流特性，对 vless+tcp+tls 或 vless+tcp+xtls、Trojan-Go 或 Trojan、HTTP/2 server 进行 SNI 分流（四层转发），实现除 Xray 或 V2Ray 的 mKCP 应用外共用 443 端口。其中 vless+tcp+tls 或 vless+tcp+xtls 为 WebSocket（WS） 提供分流转发；Nginx 同时为 vless+tcp+tls 或 vless+tcp+xtls 与 Trojan-Go 或 Trojan 提供回落服务，为 Xray 或 V2Ray 的 gRPC 提供反向代理，其应用如下：
 
-1、E=vless+tcp+tls/xtls（回落/分流配置，TLS/XTLS由自己提供及处理。）
+1、E=vless+tcp+tls/xtls（回落/分流配置，TLS/XTLS由自己启用及处理。）
 
-2、B=vmess+ws+tls（TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+2、B=vmess+ws+tls（TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
-3、G=shadowsocks+grpc+tls（TLS由Nginx提供及处理，不需配置。）
+3、G=shadowsocks+grpc+tls（TLS由Nginx启用及处理，不需配置。）
 
 4、A=vless+kcp+seed
 
-5、Trojan-Go或Trojan（TLS由自己提供及处理。）
+5、Trojan-Go或Trojan（TLS由自己启用及处理。）
 
 注意：
 
