@@ -16,9 +16,9 @@
 	}
 
 	@sws {
+		path /8ALdGZ9k #与shadowsocks+ws应用中path对应
 		header Connection *Upgrade*
 		header Upgrade websocket
-		path /8ALdGZ9k #与shadowsocks+ws应用中path对应
 	}
 	reverse_proxy @sws 127.0.0.1:2008 #转发给本机shadowsocks+ws监听端口
 
