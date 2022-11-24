@@ -1,16 +1,16 @@
 介绍：
 
-V2Ray 或 Xray 前置（监听 443 端口），利用 vless+tcp+tls 或 vless+tcp+xtls 回落及分流 WebSocket（WS） 特性、套娃 trojan+tcp 与 Nginx 为 gRPC 提供反向代理，实现除 Xray 或 V2Ray 的 mKCP 应用外共用 443 端口，其应用如下：
+Xray 或 V2Ray 前置（监听 443 端口），利用 vless+tcp+tls 或 vless+tcp+xtls 回落及分流 WebSocket（WS） 特性、套娃 trojan+tcp 与 Nginx 为 gRPC 提供反向代理，实现除 Xray 或 V2Ray 的 mKCP 应用外共用 443 端口，其应用如下：
 
-1、E=vless+tcp+tls/xtls（回落/分流配置，TLS/XTLS由自己提供及处理。）
+1、E=vless+tcp+tls/xtls（回落/分流配置，TLS/XTLS由自己启用及处理。）
 
-2、B=vmess+ws+tls（TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+2、B=vmess+ws+tls（TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
-3、C=trojan+ws+tls（TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+3、C=trojan+ws+tls（TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
-4、F=trojan+tcp+tls（TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+4、F=trojan+tcp+tls（TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
-5、G=shadowsocks+grpc+tls（TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+5、G=shadowsocks+grpc+tls（TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
 6、A=vless+kcp+seed
 
