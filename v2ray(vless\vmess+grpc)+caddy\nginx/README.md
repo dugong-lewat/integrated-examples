@@ -1,6 +1,6 @@
 介绍：
 
-利用 Caddy 或 Nginx 支持 gRPC 代理，实现 Xray 或 V2Ray 的 vless+grpc+tls 与 vmess+grpc+tls 两种反向代理应用，TLS 由 Caddy 或 Nginx 提供及处理。
+利用 Caddy 或 Nginx 支持 gRPC 代理，实现 Xray 或 V2Ray 的 vless+grpc+tls 与 vmess+grpc+tls 两种反向代理应用，TLS 由 Caddy 提供及处理或由 Nginx 启用及处理。
 
 原理：
 
