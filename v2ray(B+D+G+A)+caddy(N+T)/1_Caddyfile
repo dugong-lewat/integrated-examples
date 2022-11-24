@@ -27,9 +27,9 @@
 	}
 
 	@vws {
+		path /HALdGZ9k #与vmess+ws应用中path对应
 		header Connection *Upgrade*
 		header Upgrade websocket
-		path /HALdGZ9k #与vmess+ws应用中path对应
 	}
 	reverse_proxy @vws 127.0.0.1:2001 #转发给本机vmess+ws监听端口
 
