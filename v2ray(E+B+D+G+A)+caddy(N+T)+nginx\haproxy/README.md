@@ -2,9 +2,9 @@
 
 利用 Nginx 或 HAProxy 支持 SNI 分流特性，对 vless+tcp+tls 或 vless+tcp+xtls、HTTPS server 进行 SNI 分流（四层转发），实现除 Xray 或 V2Ray 的 mKCP 应用外共用 443 端口。其中 vless+tcp+tls 或 vless+tcp+xtls 为 WebSocket（WS） 提供分流转发；Caddy 为 vless+tcp+tls 或 vless+tcp+xtls 提供回落服务，为 Xray 或 V2Ray 的 H2C 与 gRPC 进行反向代理，为 forwardproxy 与 caddy-trojan 插件提供正向代理，其应用如下：
 
-1、E=vless+tcp+tls/xtls（回落/分流配置，TLS/XTLS由自己提供及处理。）
+1、E=vless+tcp+tls/xtls（回落/分流配置，TLS/XTLS由自己启用及处理。）
 
-2、B=vmess+ws+tls（TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+2、B=vmess+ws+tls（TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
 3、D=vless+h2c+tls（TLS由Caddy提供及处理，不需配置。）
 
