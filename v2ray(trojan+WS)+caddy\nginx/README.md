@@ -1,6 +1,6 @@
 介绍：
 
-利用 Caddy 或 Nginx 支持 WebSocket（WS）代理，实现 Xray 或 V2Ray 的 trojan+ws+tls 反向代理应用，TLS 由 Caddy 或 Nginx 提供及处理。此服务端兼容 Trojan-Go 的 WebSocket 应用，可直接使用 Trojan-Go 客户端连接（不能启用多路复用，不兼容。）。
+利用 Caddy 或 Nginx 支持 WebSocket（WS）代理，实现 Xray 或 V2Ray 的 trojan+ws+tls 反向代理应用，TLS 由 Caddy 提供及处理或由 Nginx 启用及处理。此服务端兼容 Trojan-Go 的 WebSocket 应用，可直接使用 Trojan-Go 客户端连接（不能启用多路复用，不兼容。）。
 
 原理：
 
