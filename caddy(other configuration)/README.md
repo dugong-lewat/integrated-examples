@@ -28,16 +28,16 @@
 
 三、caddy-events-exec 插件应用配置方法
 
-以 caddy-events-exec 插件实现 TLS 证书自动更新后就执行重启相关程序重载更新后的 TLS 证书（类似 acme.sh 的 reloadcmd 参数应用），配置见 events-exec_caddy.json 或 events-exec_Caddyfile 示例。
+以 caddy-events-exec 插件实现 TLS 证书自动更新后就执行重启相关程序来重载更新后的 TLS 证书（类似 acme.sh 的 reloadcmd 参数应用），配置见 events-exec_caddy.json 或 events-exec_Caddyfile 示例。
 
-四、使用外部 TLS 证书对应 Caddy 的配置方法
+四、Caddy 使用外部 TLS 证书的配置方法
 
-使用外部 TLS 证书对应 Caddy 的配置方法，配置见 outside_caddy.json 或 outside_Caddyfile 示例。
+Caddy 使用非自己内置 ACME 客户端提供的 TLS 证书时，其配置见 outside_caddy.json 或 outside_Caddyfile 示例。
 
 五、Caddy 网盘应用配置方法
 
-以 WebDAV 插件及文件服务应用打造不同的网盘应用（服务端），配置见 webdav_caddy.json 或 webdav_Caddyfile 示例。
+以 caddy-webdav 插件及文件服务应用打造不同的网盘应用（服务端），配置见 webdav_caddy.json 或 webdav_Caddyfile 示例。
 
 六、Caddy DDNS 客户端配置方法
 
-Caddy 使用 caddy-dynamicdns 插件及对应 caddy-dns 插件实现 DDNS 客户端应用。基本配置见 DDNS_caddy.json 或 DDNS_Caddyfile 示例，详细配置见 caddy-dynamicdns 资源。
+Caddy 使用 caddy-dynamicdns 插件及对应的 caddy-dns 插件实现对应的 DDNS 客户端应用。基本配置见 DDNS_caddy.json 或 DDNS_Caddyfile 示例，详细配置见 caddy-dynamicdns 资源。
