@@ -2,19 +2,19 @@
 
 Xray 或 V2Ray 前置（监听 443 端口），利用 vless+tcp+tls 或 vless+tcp+xtls 回落及分流 WebSocket（WS）特性与 Caddy 为 H2C 与 gRPC 提供反向代理、为 forwardproxy 与 caddy-trojan 插件提供正向代理，实现除 Xray 或 V2Ray 的 mKCP 应用外共用 443 端口，其应用如下：
 
-1、E=vless+tcp+tls/xtls（回落/分流配置，TLS/XTLS由自己提供及处理。）
+1、E=vless+tcp+tls/xtls（回落/分流配置，TLS/XTLS由自己启用及处理。）
 
-2、B=vmess+ws+tls（TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+2、B=vmess+ws+tls（TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
-3、D=vless+h2c+tls（TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+3、D=vless+h2c+tls（TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
-4、G=shadowsocks+grpc+tls（TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+4、G=shadowsocks+grpc+tls（TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
 5、A=vless+kcp+seed
 
-6、NaïveProxy（基于Caddy的改进版forwardproxy插件实现，TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+6、NaïveProxy（基于Caddy的改进版forwardproxy插件实现，TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
-7、Trojan-Go（基于Caddy的caddy-trojan插件实现，TLS由vless+tcp+tls/xtls提供及处理，不需配置。）
+7、Trojan-Go（基于Caddy的caddy-trojan插件实现，TLS由vless+tcp+tls/xtls启用及处理，不需配置。）
 
 注意：
 
