@@ -16,9 +16,9 @@
 	}
 
 	@tws {
+		path /9ALdGZ9k #与trojan+ws应用中path对应
 		header Connection *Upgrade*
 		header Upgrade websocket
-		path /9ALdGZ9k #与trojan+ws应用中path对应
 	}
 	reverse_proxy @tws unix//dev/shm/tws.sock #转发给本机trojan+ws监听进程
 
